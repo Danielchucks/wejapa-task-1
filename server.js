@@ -5,7 +5,7 @@ const port = 3000 || process.env.PORT;
 const server = http.createServer((req, res) => {
    if (req.method === "GET" && req.url === "/") {
       res.write("Hello World, welcome to Wejapa Internships");
-      res.end(200);
+      res.end();
    } else {
       res.end("Error 404!!!, PAGE NOT FOUND");
    }
